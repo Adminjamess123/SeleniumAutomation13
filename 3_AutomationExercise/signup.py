@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.support.ui import Select
 
+
 # Step 1 = launch browser
 driver = webdriver.Firefox()
 
