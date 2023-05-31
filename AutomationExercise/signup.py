@@ -13,15 +13,15 @@ driver.get("https://automationexercise.com/login")
 time.sleep(5)
 
 # Step 3 = type username
-Username = driver.find_element(By.CSS_SELECTOR, "#form > div > div > div:nth-child(3) > div > form > input[type=text]:nth-child(2)")
+Username = driver.find_element(By.CSS_SELECTOR, "[type='text']")
 Username.send_keys("James")
 
 # Step 4 = type email
-signup_email = driver.find_element(By.CSS_SELECTOR, "#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)")
-signup_email.send_keys("gomes.james@gmail.com")
+signup_email = driver.find_element(By.CSS_SELECTOR, "[action='\/signup'] [type='email']")
+signup_email.send_keys("gomes.jame@gmail.com")
 
 # Step 5 = signup
-signup_button = driver.find_element(By.CSS_SELECTOR, "#form > div > div > div:nth-child(3) > div > form > button")
+signup_button = driver.find_element(By.CSS_SELECTOR, "[action='\/signup'] .btn-default")
 signup_button.click()
 
 # Step 6 = click gender title

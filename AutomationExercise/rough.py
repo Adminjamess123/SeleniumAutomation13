@@ -1,12 +1,6 @@
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import string
 import random
+
 def random_email():
     domain = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"]
     letters = string.ascii_lowercase + string.digits
@@ -24,5 +18,11 @@ def random_string():
     letters = string.ascii_lowercase + string.digits
     random_name = ''.join(random.choice(letters) for _ in range(5))
     string_random = f"{random_name}"
-    return string
-print(random_string())
+    return random_name
+
+print (random_string())
+
+def random_number():
+    return random.randint(100, 2000)
+
+print (random_number())
